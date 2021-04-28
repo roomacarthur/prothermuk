@@ -98,6 +98,10 @@ label.mobile-menu {
   text-align: center;
   padding-left: 0;
 }
+#header-nav a {
+  color: var(--dark);
+  text-decoration: none;
+}
 /* Toggle Show/Hide Menu */
 #hamitems {
   display: none;
@@ -164,7 +168,7 @@ section > img {
 .homeHR {
   margin: 0.5rem auto;
   padding: ;
-  width: 95%;
+  width: 80%;
   height: 2px;
   background-color: var(--light);
 }
