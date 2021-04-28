@@ -1,0 +1,208 @@
+/*Import Google Font's Package.*/
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;400;900&display=swap");
+
+/*colour Variables*/
+:root {
+  --light: #fff;
+  --yellow: #f6ea8c;
+  --orange: #c54c3c;
+  --red: #b3182a;
+  --dark: #492540;
+}
+
+/*Root styles for the page, Reset browser added styles. targets all HTML elements.*/
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/*Body Styling*/
+body {
+  font-family: Roboto, Sans-serif;
+  color: var(--dark);
+  font-weight: 300; /*This needs checking.*/
+  background-color: var(--light);
+}
+/*Typography Styling*/
+h1,
+h2,
+h3 {
+  font-family: Lato, sans-serif;
+  color: var(--dark);
+  letter-spacing: 2px;
+}
+/*Remove default Hyperlink styling.*/
+a {
+  text-decoration: none;
+}
+/*Styling for header*/
+header {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 75px;
+}
+header img {
+  vertical-align: middle;
+  height: 75px;
+  float: left;
+}
+#logo {
+  padding-top: 1rem;
+  width: 70%;
+  font-size: 150%;
+  margin: 0 auto;
+  color: var(--dark);
+  line-height: normal;
+}
+#logoTag {
+  font-size: 80%;
+  width: 70%;
+  margin: 0 auto;
+  line-height: normal;
+}
+/*set lineheight of whole header area.*/
+#hamitems {
+  display: none;
+}
+label.mobile-menu {
+  line-height: 50px;
+  width: 50px;
+  text-align: center;
+  top: 2.5px;
+}
+#mobile-nav label {
+  display: inline-block;
+  position: absolute;
+  color: var(--red);
+  background: var(--light);
+  font-style: normal;
+  font-size: 2em;
+  right: 0;
+  line-height: 70px;
+  cursor: pointer;
+}
+/* Break down menu items into vertical */
+#header-nav ul {
+  width: 100%;
+  text-align: center;
+}
+#header-nav li {
+  box-sizing: border-box;
+  line-height: 40px;
+  display: block;
+  width: 100vw;
+  color: var(--light);
+  letter-spacing: 1px;
+  font-weight: 400;
+  border-bottom: 1px solid var(--dark);
+  text-align: center;
+  padding-left: 0;
+}
+/* Toggle Show/Hide Menu */
+#hamitems {
+  display: none;
+}
+#mobile-nav input:checked ~ #hamitems {
+  display: block;
+  clear: both;
+}
+/*Hide default checkbox*/
+#hamburger {
+  display: none;
+}
+#header-nav #contact-us {
+  background-color: var(--dark);
+  color: var(--yellow);
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.active {
+  padding-bottom: 0.2em;
+  border-bottom: 0.2em solid var(--dark);
+}
+/*general page styling./*/
+section {
+  clear: both;
+  text-align: center;
+  background-color: var(--dark);
+}
+.homeBlurb {
+  margin: 0 auto;
+  width: 100%;
+  color: var(--light);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeBlurb > p {
+  padding: 1rem 0;
+  width: 90%;
+  line-height: 1.5rem;
+}
+section > img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+}
+.homeContent > h3 {
+  font-size: 150%;
+  color: var(--yellow);
+}
+.homeContent > p {
+  color: var(--light);
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.homeHR {
+  margin: 0.5rem auto;
+  padding: ;
+  width: 95%;
+  height: 2px;
+  background-color: var(--light);
+}
+/*Footer styling*/
+
+footer {
+  text-align: center;
+}
+footer h2 {
+  padding: 0.5rem 0;
+}
+footer p {
+  padding: 0.5rem 0;
+}
+.footerSocials {
+  padding: 1rem 0;
+}
+
+.footerSocials li {
+  display: inline;
+}
+.footerSocials i {
+  margin: 0;
+  padding: 0 10px 0 10px;
+  color: var(--orange);
+  font-size: 180%;
+}
+.footerSocials i:hover {
+  animation-name: socials-zoom;
+  color: var(--dark);
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes socials-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
