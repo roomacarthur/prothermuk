@@ -173,6 +173,65 @@ section > img {
   height: 2px;
   background-color: var(--light);
 }
+
+/*Kool Duct styling*/
+.koolDuctContainer {
+  margin: 1rem auto;
+  text-align: center;
+  width: 100%;
+}
+.koolHR {
+  width: 90%;
+  height: 2px;
+  background-color: var(--dark);
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.koolDuctContainer h2 {
+  padding: 1rem 0;
+}
+.koolDuctContainer h4 {
+  font-size: 130%;
+  letter-spacing: 1px;
+}
+.koolDuct {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+.koolDuctContainer > img {
+  width: 100%;
+  height: ;
+}
+
+/*about us styling*/
+.aboutContainer,
+.servicesContainer {
+  margin: 1rem auto;
+  line-height: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.aboutContainer h2,
+.servicesContainer h2 {
+  line-height: 3rem;
+}
+.aboutContainer img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  padding: 0;
+  margin: 0;
+}
+.aboutContainer p {
+  width: 90%;
+  margin: 0 auto;
+}
+/*Services styling*/
+
 /*Footer styling*/
 
 footer {
